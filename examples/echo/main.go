@@ -7,7 +7,10 @@ import (
 	_ "github.com/davyxu/cellnet/proc/tcp" // 注册TCP Processor
 )
 
-const peerAddress = "127.0.0.1:17701"
+const(
+	peerAddress = "127.0.0.1:17701"
+)
+
 
 var clientmode = flag.Int("clientmode", 0, "0: for async recv, 1: for async rpc, 2: for sync rpc")
 
